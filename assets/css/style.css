@@ -1,0 +1,28 @@
+/* Navbar */
+nav{
+    background-color:#17a2b8;
+}
+
+/* Quienes somos texto */
+.dark{
+    background-color:black;
+    color: white;
+}
+
+/* Iconos */
+.fas{
+    background-color: blue;
+    color: white;
+    align-items: center;
+}
+
+/* Cartas */
+
+.cards{
+    background-color: skyblue;
+}
+
+/*  */
+.contacto div hr{
+    border: 3px;
+}
