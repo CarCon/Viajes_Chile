@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy: frame-ancestors 'none'" content="frame-ancestors https://form.typeform.com; child-src 'none'; object-src 'none'">
     <title>Viajes Chile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -15,15 +16,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Jomhuria&family=Teko:wght@300;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/viajes.svg" type="svg">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Viajes Chile</a>
+
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/viajes.svg" alt="logo" height="30" width="30" />
+                        Viajes Chile</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -31,10 +36,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            <a class="nav-link" href="#">Quienes Somos</a>
-                            <a class="nav-link" href="#">Destacados</a>
-                            <a class="nav-link" href="#">Contactos</a>
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                            <a class="nav-link" href="#Quienes-Somos">Quienes Somos</a>
+                            <a class="nav-link" href="#Destacados">Destacados</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contacto">Contacto</a>
+                            </li>
                         </div>
                     </div>
                 </div>
@@ -73,26 +80,26 @@
                         <hr class="bg-primary">
                     </div>
                     <div class="row py-5">
-                        <div class="col-4">
-                            <div>
-                                <a"><i class="fas fa-plane"></i></a>
+                        <div class="col-4 text-justify">
+                            <div class="ico">
+                                <a"><i class="fas fa-plane" stile="text-center"></i></a>
                             </div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ipsum ex quam error unde
                                 veritatis placeat aperiam minus adipisci maiores, vel aut natus ea quo repellendus,
                                 fuga,
                                 modi ad minima.</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 text-center">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ipsum ex quam error unde
                                 veritatis placeat aperiam minus adipisci maiores, vel aut natus ea quo repellendus,
                                 fuga,
                                 modi ad minima.</p>
-                            <div>
+                            <div class="icon">
                                 <a><i class="fas fa-mountain"></i></a>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div>
+                        <div class="col-4 text-center">
+                            <div class="icon">
                                 <a><i class="fas fa-route"></i></a>
                             </div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ipsum ex quam error unde
@@ -118,7 +125,7 @@
                         <div class="col-12 col-sm-3 my-3">
                             <div class="cards">
                                 <div class="card-body p-0">
-                                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+                                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="imagen-1">
                                     <h5 class="card-title pt-3 pl-3 pr-3 pb-1">Lorem ipsum, dolor sit amet</h5>
                                     <p class="card-text pt-0 pl-3 pr-3 pb-2">Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptatem
@@ -129,7 +136,7 @@
                         <div class="col-12 col-sm-3 my-3">
                             <div class="cards">
                                 <div class="card-body p-0">
-                                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                                    <img src="./assets/img/card2.jpg" class="card-img-top" alt="imagen-2">
                                     <h5 class="card-title pt-3 pl-3 pr-3 pb-1">Lorem ipsum, dolor sit amet</h5>
                                     <p class="card-text pt-0 pl-3 pr-3 pb-2">Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptatem
@@ -140,7 +147,7 @@
                         <div class="col-12 col-sm-3 my-3">
                             <div class="cards">
                                 <div class="card-body p-0">
-                                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+                                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="imagen-3">
                                     <h5 class="card-title pt-3 pl-3 pr-3 pb-1">Lorem ipsum, dolor sit amet</h5>
                                     <p class="card-text pt-0 pl-3 pr-3 pb-2">Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptatem
@@ -151,7 +158,7 @@
                         <div class="col-12 col-sm-3 my-3">
                             <div class="cards">
                                 <div class="card-body p-0">
-                                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+                                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="imagen-4">
                                     <h5 class="card-title pt-3 pl-3 pr-3 pb-1">Lorem ipsum, dolor sit amet</h5>
                                     <p class="card-text pt-0 pl-3 pr-3 pb-2">Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptatem
@@ -163,7 +170,6 @@
                 </section>
     </section>
 
-
     <section>
         <div class="dark">
             <div class="container">
@@ -171,14 +177,35 @@
                     <div class="container">
                         <h1 class="text-center">Contacto</h1>
                         <hr class="bg-primary">
-                        <div class="typeform-widget" data-url="https://form.typeform.com/to/fV5Dbtcj?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
-                        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                    </div>
+                        <!-- Typerform -->
+                        <div class="typeform-widget"
+                            data-url="https://form.typeform.com/to/rOq4fwt6?typeform-medium=embed-snippet"
+                            style="width: 100%; height: 500px;"></div>
+                        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+                        </script>
                 </section>
             </div>
         </div>
     </section>
-    <script src="./assets/js/main.js"></script>
+
+    <footer id="footer" class="text-center text-white py-3">
+        <div class="row container m-auto">
+            <div class="col-12 col-sm-6 py-4">
+                <h3 class="font-weight-light">VIAJES CHILE</h3>
+            </div>
+            <div class="col-12 col-sm-6 mt-4 py-3 mt-sm-0">
+                <a href="https://github.com" target="blank"><i class="fab fa-github-square fa-3x mx-2"
+                        style="color:white"></i></a>
+                <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin fa-3x mx-2"
+                        style="color:white"></i></a>
+                <a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square fa-3x mx-2"
+                        style="color:white"></i></a>
+                <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-square fa-3x mx-2"
+                        style="color:white"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -187,6 +214,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

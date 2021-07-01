@@ -17,12 +17,21 @@ nav{
 }
 
 /* Cartas */
-
 .cards{
     background-color: skyblue;
 }
 
-/*  */
+/* Barra */
 .contacto div hr{
     border: 3px;
+}
+
+/* Footer */
+#footer{
+    background-color:#17a2b8 ;
+}
+
+#section div ico{
+    text-align: center;
+
 }
